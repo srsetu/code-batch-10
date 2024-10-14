@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Combinator</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .box1 {
+                width: 300px;
+                height: 300px;
+                padding: 40px;
+                background-color: tomato;
+                border: 20px solid black;
+                margin-bottom: 100px;
+            }
+            .box2 {
+                margin-top: 150px;
+                width: 300px;
+                height: 300px;
+                background-color: grey;
+            }
+
+            a {
+                display: inline-block;
+                width: 300px;
+                height: 300px;
+                background-color: tomato;
+                color: #fff;
+                text-decoration: none;
+                padding: 20px 40px;
+                margin-top: 100px;
+                border: 10px solid black;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut natus
+            voluptates, nihil autem in est dicta atque ipsa, dolorum
+            exercitationem ipsum nostrum nam odit officiis earum voluptate
+            reiciendis repudiandae consectetur!
+        </div>
+        <div class="box2"></div>
+        <a href="https://google.com" class="google">Google</a>
+
+        <!-- 
+	descendant selector (space) -> sokol child
+	child selector (>) -> direct child
+	adjacent sibling selector (+)
+	general sibling selector (~)
+	-->
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Position and M. Query</title>
+        <style>
+            /*
+			1. No Media Query -> Mobile
+			2. min-width: 768px -> Tablet
+			3. min-width: 1200px -> PC
+			*/
+
+            /* Mobile */
+            h1 {
+                color: tomato;
+            }
+            /* Tablet */
+            @media screen and (min-width: 768px) {
+                h1 {
+                    color: teal;
+                }
+            }
+            /* PC */
+            @media screen and (min-width: 1200px) {
+                h1 {
+                    color: red;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hello World</h1>
+
+        <!-- 
+		1. 0-768 -> Mobile -> Tomato
+		2. 769-1199 -> Tablet -> Teal
+		3. 1200+ -> PC -> Red
+		-->
+    </body>
+</html>

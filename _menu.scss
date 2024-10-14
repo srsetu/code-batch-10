@@ -1,0 +1,19 @@
+// Menu
+.menu {
+	@include menu-basic(row, 20px);
+	&__item {
+		background-color: tomato;
+		padding: 10px 25px;
+		cursor: pointer;
+		&:hover {
+			background-color: teal;
+		}
+	}
+	&__link {
+		text-decoration: none;
+		color:#fff;
+	}
+}
+.footer-menu {
+	@include menu-basic(column, 0);
+}

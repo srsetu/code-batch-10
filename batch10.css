@@ -1,0 +1,29 @@
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.text-red {
+	color: red;
+}
+.text-center {
+	text-align: center;
+}
+.text-uppercase {
+	text-transform: uppercase;
+}
+.text-lowercase {
+	text-transform: lowercase;
+}
+
+/* Utilities */
+
+.mb-10 {
+	margin-bottom: 10px;
+}
+.mb-20 {
+	margin-bottom: 20px;
+}
+.m-10 {
+	margin: 10px;
+}

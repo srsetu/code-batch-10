@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Dropdown</title>
+        <style>
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                display: flex;
+            }
+            ul li {
+                background-color: tomato;
+                padding: 15px 30px;
+                cursor: pointer;
+                position: relative;
+            }
+            ul li:hover {
+                background-color: rgb(179, 68, 49);
+            }
+            ul li a {
+                color: #fff;
+                text-decoration: none;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            ul.dropdown {
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                display: none;
+            }
+
+            ul.dropdown li {
+                position: relative;
+            }
+
+            ul li:hover ul.dropdown {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li>
+                <a href="#">Services</a>
+
+                <ul class="dropdown">
+                    <li><a href="#">Web Design</a></li>
+                    <li>
+                        <a href="#">Graphics Design</a>
+
+                        <ul class="dropdown2"></ul>
+                    </li>
+                    <li><a href="#">Digital Marketing</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </body>
+</html>

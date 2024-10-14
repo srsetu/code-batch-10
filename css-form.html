@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Form</title>
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <style>
+            ::placeholder {
+                text-decoration: underline;
+            }
+            input {
+                padding: 7px;
+                padding-left: 30px;
+                width: 200px;
+                outline: none;
+                font-family: Arial, Helvetica, sans-serif;
+                border-color: tomato;
+                margin-bottom: 15px;
+            }
+            span.form-icon {
+                background-color: tomato;
+                color: #fff;
+                padding: 6px;
+                position: relative;
+                left: 30px;
+                top: 0.5px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="">
+            <div>
+                <label for="fullName">Full Name</label>
+                <span class="form-icon"><i class="fa-solid fa-user"></i></span>
+                <input
+                    type="text"
+                    name="fullName"
+                    id="fullName"
+                    placeholder="Your name"
+                />
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="example@gmail.com"
+                />
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="********"
+                />
+            </div>
+            <div>
+                <input type="submit" value="Register" />
+            </div>
+        </form>
+    </body>
+</html>

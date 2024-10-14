@@ -1,0 +1,51 @@
+/* 
+1. Universal Selector (*)
+2. Tag Selector
+3. Class Selector
+4. ID Selector
+5. Attribute Selector
+*/
+
+/* Universal Selector */
+
+/* * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+} */
+
+/* Tag Selector */
+/* 
+li {
+	color: red;
+} */
+
+/* Class Selector */
+
+/* li.odd {
+	color: red;
+}
+li.even {
+	color: blue;
+} */
+
+/* #jupiter {
+	color: red;
+}
+
+h1.jupiter {
+	color: blue !important;
+} */
+
+
+a[href="https://google.com"] {
+	color: red;
+}
+
+a[href="https://yahoo.com"] {
+	color: green;
+}
+
+h1[title] {
+	color: red;
+}

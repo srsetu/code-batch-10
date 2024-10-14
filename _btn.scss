@@ -1,0 +1,10 @@
+.google {
+	@extend %btn;
+	background-color: tomato;
+
+}
+
+.yahoo {
+	@extend %btn;
+	background-color: teal;
+}

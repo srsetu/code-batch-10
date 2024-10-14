@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Flexbox</title>
+        <style>
+            .parent {
+                display: flex;
+            }
+
+            .child1 {
+                background-color: tomato;
+                color: #fff;
+            }
+            .child2 {
+                background-color: gray;
+                color: #fff;
+            }
+            .child3 {
+                background-color: orange;
+                color: #fff;
+            }
+
+            .parent > * {
+                flex: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <p class="child1">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Officia distinctio facere, at a magni impedit debitis eius quae
+                aspernatur, beatae doloremque adipisci praesentium quidem
+                voluptate pariatur modi expedita provident aliquam!
+            </p>
+            <p class="child2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
+                sunt! Architecto reiciendis ea fuga dicta necessitatibus
+                inventore. Voluptates suscipit incidunt doloribus, explicabo
+                autem fugiat quisquam, labore quia enim temporibus nam saepe
+                quasi delectus facere sint, laudantium at beatae amet iure
+                animi! Architecto voluptatum, minima commodi explicabo labore
+                rerum deleniti recusandae.
+            </p>
+            <p class="child3">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptas eligendi porro laboriosam, eos voluptatibus, facilis
+                molestiae magnam earum hic rerum labore quibusdam quaerat
+                debitis nam obcaecati? Illum atque repudiandae sapiente, dolore
+                aspernatur porro! Perspiciatis rerum amet id porro voluptatibus
+                consequatur cupiditate nobis, provident quae, blanditiis,
+                dignissimos quis officia saepe totam quia cum corrupti quibusdam
+                dolores eum reprehenderit. Esse, at earum. A, fugit, laudantium
+                voluptate ratione quas sapiente tenetur consequatur ut facere
+                officia enim nihil incidunt tempore, cumque voluptas.
+            </p>
+            <p class="child4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptas eligendi porro laboriosam, eos voluptatibus, facilis
+                molestiae magnam earum hic rerum labore quibusdam quaerat
+                debitis nam obcaecati? Illum atque repudiandae sapiente, dolore
+                aspernatur porro! Perspiciatis rerum amet id porro voluptatibus
+                consequatur cupiditate nobis, provident quae, blanditiis,
+                dignissimos quis officia saepe totam quia cum corrupti quibusdam
+                dolores eum reprehenderit. Esse, at earum. A, fugit, laudantium
+                voluptate ratione quas sapiente tenetur consequatur ut facere
+                officia enim nihil incidunt tempore, cumque voluptas.
+            </p>
+            <p>Lorem, ipsum dolor.</p>
+        </div>
+    </body>
+</html>

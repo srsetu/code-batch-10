@@ -1,0 +1,13 @@
+.parent {
+	display: flex;
+	/* justify-content: space-evenly; */
+	align-items: flex-end;
+	justify-content: center;
+	flex-direction: column-reverse;
+}
+
+
+/* 
+Need to check: https://jade-gelato-5843ef.netlify.app/
+
+*/

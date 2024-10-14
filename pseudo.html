@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Pseudo Class and Elements</title>
+        <style>
+            h1 {
+                position: relative;
+            }
+            h1::after {
+                content: '';
+                display: inline-block;
+                background-color: red;
+                position: absolute;
+                border-radius: 50%;
+                width: 9px;
+                height: 14px;
+                left: 153px;
+                z-index: -999;
+                top: 14px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hello World</h1>
+    </body>
+</html>

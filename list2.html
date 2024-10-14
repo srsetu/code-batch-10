@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>List Item</title>
+        <style>
+            table,
+            th,
+            td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            td,
+            th {
+                padding: 10px;
+            }
+            td {
+                width: 400px;
+            }
+
+            tr:nth-of-type(odd):not(thead tr):hover {
+                background-color: tomato;
+                color: #fff;
+            }
+
+            tr:nth-of-type(even):hover {
+                background-color: gray;
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Year</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>john@email.com</td>
+                    <td>2024</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>john@email.com</td>
+                    <td>2024</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>john@email.com</td>
+                    <td>2024</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>john@email.com</td>
+                    <td>2024</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
