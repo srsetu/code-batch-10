@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flip a Coin</title>
+    </head>
+    <body>
+        <h1>Flip a Coin</h1>
+        <button>Head</button>
+        <button>Tail</button>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+            assumenda voluptatem non ipsa excepturi, iure dolorem labore. Ipsa,
+            fugit. Accusantium.
+        </p>
+
+        <h1>Result: <span></span></h1>
+
+        <script>
+            const span = document.querySelector('span');
+            const btns = document.querySelectorAll('button');
+
+            function flipACoin() {
+                let rand = Math.ceil(Math.random() * 2);
+                if (rand == 1) {
+                    span.textContent = 'Head Won';
+                } else {
+                    span.textContent = 'Tail Won';
+                }
+            }
+
+            for (let btn of btns) {
+                btn.addEventListener('click', flipACoin);
+            }
+        </script>
+    </body>
+</html>
+
+<!-- Flip a Coin -->
+<!-- Random Text/Word Generator -->
+<!-- Random Image (Messi, Ronaldo, Neymar) -->
+<!-- Rock Paper Scissor -->
